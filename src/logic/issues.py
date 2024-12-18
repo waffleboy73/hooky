@@ -2,9 +2,9 @@ import enum
 from dataclasses import dataclass, field
 from typing import Final
 
-import redis
-from github.Issue import Issue as GhIssue
-from github.Repository import Repository as GhRepository
+import redis # type: ignore
+from github.Issue import Issue as GhIssue # type: ignore
+from github.Repository import Repository as GhRepository # type: ignore
 
 from ..github_auth import get_repo_client
 from ..repo_config import RepoConfig
